@@ -1,9 +1,10 @@
 #!/bin/bash
 yum install -y httpd
 
-sudo amazon-linux-extras install python3.8
+sudo amazon-linux-extras install python3.8=latest
 python3 --version
 
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
-pip install -r reqs.txt
+
+.local/bin/pip install -r reqs.txt
