@@ -1,4 +1,4 @@
 #!/bin/bash
 yum install -y httpd
-
+sudo amazon-linux-extras install python3
 pip install -r reqs.txt

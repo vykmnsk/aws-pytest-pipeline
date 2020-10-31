@@ -1,0 +1,6 @@
+pytest
+pytest-bdd
+requests
+boto3
+pdbpp
+seleniumbase
