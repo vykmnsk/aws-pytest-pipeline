@@ -8,3 +8,5 @@ python3 get-pip.py --user
 
 /root/.local/bin/pip install -r reqs.txt
 python --version
+pytest --version
+pytest --junitxml=results.xml
