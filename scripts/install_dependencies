@@ -7,11 +7,13 @@ python3 --version
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 python3 -m pip --version
-# /root/.local/bin/pip3 --version
 
+cd /erm
 pwd
-ls /erm
+ls
 
-python3 -m pip install -r /erm/reqs.txt
+python3 -m pip install -r reqs.txt
 python3 -m pytest --version
+
+ls
 python3 -m pytest --junitxml=results.xml

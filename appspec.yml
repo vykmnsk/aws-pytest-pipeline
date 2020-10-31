@@ -1,6 +1,8 @@
 version: 0.0
 os: linux
 files:
+  - source: /results.txt
+    destination: /var/www/html/
   - source: /results.xml
     destination: /var/www/html/
   - source: /index.html

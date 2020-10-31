@@ -1,0 +1,40 @@
+(.venv) λ pytest --headless
+========================================== test session starts ==========================================
+platform win32 -- Python 3.8.5, pytest-6.1.1, py-1.9.0, pluggy-0.13.1 -- c:\users\yklind\vyk\code\erm\.venv\scripts\python.exe cachedir: .pytest_cache
+metadata: {'Python': '3.8.5', 'Platform': 'Windows-10-10.0.18362-SP0', 'Packages': {'pytest': '6.1.1', 'py': '1.9.0', 'pluggy': '0.13.1'}, 'Plugins': {'allure-pytest': '2.8.18', 'bdd': '4.0.1', 'cov': '2.10.1', 'forked': '1.3.0', 'html': '2.0.1', 'metadata': '1.10.0', 'ordering': '0.6', 'rerunfailures': '9.1.1', 'xdist': '2.1.0', 'seleniumbase': '1.50.1'}}
+rootdir: C:\Users\YKlind\vyk\code\erm, configfile: pytest.ini, testpaths: tests
+plugins: allure-pytest-2.8.18, bdd-4.0.1, cov-2.10.1, forked-1.3.0, html-2.0.1, metadata-1.10.0, ordering-0.6, rerunfailures-9.1.1, xdist-2.1.0, seleniumbase-1.50.1
+collected 8 items
+
+tests/step_defs/test_api_gateway.py::test_forbidden_without_auth PASSED
+tests/step_defs/test_api_gateway.py::test_contain_3_pets PASSED
+tests/step_defs/test_api_gateway.py::test_post_call FAILED
+tests/step_defs/test_s3_bucket.py::test_bucket_contains_only_1_object FAILED
+tests/step_defs/test_s3_bucket.py::test_object_content PASSED
+tests/step_defs/test_ui_ecommerce.py::test_unsuccessful_login PASSED
+tests/step_defs/test_ui_ecommerce.py::test_product_search[Asus N551JK-XO076H Laptop-$1,500.00] PASSED
+tests/step_defs/test_ui_ecommerce.py::test_add_to_shopping_cart[Asus N551JK-XO076H Laptop-$1,500.00] PASSED
+
+=============================================== FAILURES ================================================
+____________________________________________ test_post_call _____________________________________________
+tests\step_defs\test_api_gateway.py:32: in test_post_call
+    assert json_content['message'] == 'success'
+E   AssertionError: assert 'Missing Authentication Token' == 'success'
+E     - success
+E     + Missing Authentication Token
+__________________________________ test_bucket_contains_only_1_object ___________________________________
+tests\step_defs\test_s3_bucket.py:24: in test_bucket_contains_only_1_object
+    assert len(all_objects) == 1
+E   assert 2 == 1
+E     +2
+E     -1
+=========================================== warnings summary ============================================
+.venv\lib\site-packages\pyreadline\py3k_compat.py:8
+  c:\users\yklind\vyk\code\erm\.venv\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================================== short test summary info ========================================
+FAILED tests/step_defs/test_api_gateway.py::test_post_call - AssertionError: assert 'Missing Authentica...
+FAILED tests/step_defs/test_s3_bucket.py::test_bucket_contains_only_1_object - assert 2 == 1
+================================ 2 failed, 6 passed, 1 warning in 36.80s ================================
