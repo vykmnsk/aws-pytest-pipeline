@@ -2,11 +2,13 @@
 yum install -y httpd
 
 sudo amazon-linux-extras install python3.8
+python3 --version
 
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 
-/root/.local/bin/pip install -r reqs.txt
-python --version
+pwd
+/root/.local/bin/pip3 --version
+/root/.local/bin/pip3 install -r ../reqs.txt
 pytest --version
 pytest --junitxml=results.xml
