@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="0" failures="2" skipped="0" tests="8" time="36.222" timestamp="2020-10-30T12:14:25.606365" hostname="bun226104">
+        <testcase classname="tests.step_defs.test_api_gateway" name="test_forbidden_without_auth" time="0.193" />
+        <testcase classname="tests.step_defs.test_api_gateway" name="test_contain_3_pets" time="0.140" />
+        <testcase classname="tests.step_defs.test_api_gateway" name="test_post_call" time="0.123">
+            <failure message="AssertionError: assert 'Missing Authentication Token' == 'success'&#10;  - success&#10;  + Missing Authentication Token">tests\step_defs\test_api_gateway.py:32: in test_post_call
+    assert json_content['message'] == 'success'
+E   AssertionError: assert 'Missing Authentication Token' == 'success'
+E     - success
+E     + Missing Authentication Token</failure>
+        </testcase>
+        <testcase classname="tests.step_defs.test_s3_bucket" name="test_bucket_contains_only_1_object" time="0.637">
+            <failure message="assert 2 == 1&#10;  +2&#10;  -1">tests\step_defs\test_s3_bucket.py:24: in test_bucket_contains_only_1_object
+    assert len(all_objects) == 1
+E   assert 2 == 1
+E     +2
+E     -1</failure>
+        </testcase>
+        <testcase classname="tests.step_defs.test_s3_bucket" name="test_object_content" time="0.208" />
+        <testcase classname="tests.step_defs.test_ui_ecommerce" name="test_unsuccessful_login" time="12.590" />
+        <testcase classname="tests.step_defs.test_ui_ecommerce" name="test_product_search[Asus N551JK-XO076H Laptop-$1,500.00]" time="10.053" />
+        <testcase classname="tests.step_defs.test_ui_ecommerce" name="test_add_to_shopping_cart[Asus N551JK-XO076H Laptop-$1,500.00]" time="9.852" />
+    </testsuite>
+</testsuites>
