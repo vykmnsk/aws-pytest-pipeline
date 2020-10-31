@@ -1,0 +1,11 @@
+# Byte-compiled / optimized files
+Pipfile.lock
+__pycache__/
+.pytest_cache/
+.python-version
+.vscode/
+.venv/
+.tmp/
+*.log
+*.zip
+*.env
