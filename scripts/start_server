@@ -1,3 +1,12 @@
 #!/bin/bash
 service httpd start
 
+pwd
+ls
+
+/root/.local/bin/pip3 --version
+/root/.local/bin/pip3 install -r reqs.txt
+pytest --version
+pytest --junitxml=results.xml
+
+
