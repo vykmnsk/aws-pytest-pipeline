@@ -1,0 +1,4 @@
+export API_KEY=bGKhXvJf543YQytSYpBNp4YEIChGlrbJ3UkM76pP
+cd /erm
+ls
+python3 -m pytest --junitxml=results.xml
