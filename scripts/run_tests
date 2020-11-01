@@ -1,6 +1,7 @@
 export API_KEY=bGKhXvJf543YQytSYpBNp4YEIChGlrbJ3UkM76pP
 export AWS_ACCESS_KEY=AKIAUBWUCV7QVRYRJ344
 export AWS_SECRET_KEY=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
+export PYTEST_ADDOPTS="--start-page=https://demo.nopcommerce.com"
+
 cd /erm
-ls
 python3 -m pytest --junitxml=results.xml
