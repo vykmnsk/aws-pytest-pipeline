@@ -1,8 +1,8 @@
 #!/bin/bash
 yum install -y httpd
 
-yum install -y python
-sudo amazon-linux-extras install python3.8
+sudo yum list | grep python3
+sudo amazon-linux-extras install python36
 
 python --version
 python3 --version
