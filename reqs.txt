@@ -4,3 +4,4 @@ requests
 boto3
 pdbpp
 seleniumbase
+pytest-custom_exit_code

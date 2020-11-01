@@ -4,4 +4,4 @@ export AWS_SECRET_KEY=faAFDkypJh1U822COtUPY4sDTt30+DbAb2MSRtoz
 export PYTEST_ADDOPTS="--start-page=https://demo.nopcommerce.com"
 
 cd /erm
-python3 -m pytest --junitxml=results.xml
+python3 -m pytest --junitxml=results.xml --suppress-tests-failed-exit-code
