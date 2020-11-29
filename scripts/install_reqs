@@ -3,7 +3,7 @@ python3 --version
 
 python3 -m pip --version
 
-cd /erm
+cd /term
 python3 -m pip install -r reqs.txt
 python3 -m pytest --version
 

@@ -8,7 +8,7 @@ files:
   - source: /index.html
     destination: /var/www/html/
   - source: /
-    destination: /erm/
+    destination: /term/
 
 hooks:
   ApplicationStop:
@@ -26,4 +26,4 @@ hooks:
     - location: scripts/start_server
       timeout: 300
       runas: root
-    
+
