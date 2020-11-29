@@ -12,8 +12,8 @@ tests/step_defs/test_api_gateway.py::test_post_call FAILED
 tests/step_defs/test_s3_bucket.py::test_bucket_contains_only_1_object FAILED
 tests/step_defs/test_s3_bucket.py::test_object_content PASSED
 tests/step_defs/test_ui_ecommerce.py::test_unsuccessful_login PASSED
-tests/step_defs/test_ui_ecommerce.py::test_product_search[Asus N551JK-XO076H Laptop-$1,500.00] PASSED
-tests/step_defs/test_ui_ecommerce.py::test_add_to_shopping_cart[Asus N551JK-XO076H Laptop-$1,500.00] PASSED
+tests/step_defs/test_ui_ecommerce.py::test_product_search[Dell XPS 13 (2020) Laptop-$1,398.98] PASSED
+tests/step_defs/test_ui_ecommerce.py::test_add_to_shopping_cart[Dell XPS 13 (2020) Laptop-$1,398.98] PASSED
 
 =============================================== FAILURES ================================================
 ____________________________________________ test_post_call _____________________________________________

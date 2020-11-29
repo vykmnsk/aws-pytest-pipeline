@@ -14,8 +14,8 @@ Scenario Outline: Product Search
     And I can see the price <price>
 
     Examples:
-    | product                   | price     |  
-    | Asus N551JK-XO076H Laptop | $1,500.00 |
+    | product                   | price     |
+    | Dell XPS 13 (2020) Laptop | $1,398.98 |
 
 
 Scenario Outline: Add to shopping cart
@@ -24,5 +24,5 @@ Scenario Outline: Add to shopping cart
     Then I can add the product to the shopping cart
 
     Examples:
-    | product                   | price     |  
-    | Asus N551JK-XO076H Laptop | $1,500.00 |
+    | product                   | price     |
+    | Dell XPS 13 (2020) Laptop | $1,398.98 |

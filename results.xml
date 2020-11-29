@@ -19,7 +19,7 @@ E     -1</failure>
         </testcase>
         <testcase classname="tests.step_defs.test_s3_bucket" name="test_object_content" time="0.208" />
         <testcase classname="tests.step_defs.test_ui_ecommerce" name="test_unsuccessful_login" time="12.590" />
-        <testcase classname="tests.step_defs.test_ui_ecommerce" name="test_product_search[Asus N551JK-XO076H Laptop-$1,500.00]" time="10.053" />
-        <testcase classname="tests.step_defs.test_ui_ecommerce" name="test_add_to_shopping_cart[Asus N551JK-XO076H Laptop-$1,500.00]" time="9.852" />
+        <testcase classname="tests.step_defs.test_ui_ecommerce" name="test_product_search[Dell XPS 13 (2020) Laptop-$1,398.98]" time="10.053" />
+        <testcase classname="tests.step_defs.test_ui_ecommerce" name="test_add_to_shopping_cart[Dell XPS 13 (2020) Laptop-$1,398.98]" time="9.852" />
     </testsuite>
 </testsuites>
